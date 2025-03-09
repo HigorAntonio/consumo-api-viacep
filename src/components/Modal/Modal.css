@@ -1,0 +1,48 @@
+.modal-container {
+  padding: calc(16rem / 16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.015);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-wrapper {
+  position: relative;
+}
+
+.modal-close-button {
+  margin: calc(16rem / 16);
+  padding: 0 calc(4rem / 16);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #b2b3bd;
+  font-family: Inter;
+  font-size: calc(24rem / 16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(24rem / 16);
+
+  background-color: transparent;
+  border: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+}

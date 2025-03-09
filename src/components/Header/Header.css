@@ -1,0 +1,144 @@
+.header-container {
+  width: 100%;
+  height: calc(67rem / 16);
+  padding-inline: calc(80rem / 16);
+  background-color: var(--background-secondary);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  gap: calc(78rem / 16);
+
+  border-bottom: calc(1rem / 16) solid var(--border-primary);
+  z-index: 200;
+}
+
+.logo-container {
+  padding-block: calc(16rem / 16);
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: calc(8rem / 16);
+
+    color: #fff;
+    font-family: Inter;
+    font-size: calc(28rem / 16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+
+  svg {
+    fill: var(--accent-blue-mid);
+  }
+}
+
+.navigation-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: calc(4rem / 16);
+}
+
+.navigation-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: calc(20rem / 16);
+
+  li {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    height: 100%;
+    padding-block: calc(16rem / 16);
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    font-family: Inter;
+    font-size: calc(16rem / 16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+
+    position: relative;
+  }
+
+  a.active {
+    color: var(--accent-blue-light);
+    border-bottom: calc(2rem / 16) solid var(--accent-blue-light);
+  }
+
+  a:hover {
+    color: var(--accent-blue-light);
+  }
+}
+
+@media (max-width: 750px) {
+  .header-container {
+    padding-inline: calc(40rem / 16);
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .hamburger-button {
+    order: 3;
+    display: block;
+    z-index: 1;
+  }
+
+  .navigation-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100dvw;
+    height: calc(100dvh - calc(67rem / 16));
+    background-color: var(--background-secondary);
+    opacity: 0;
+    transition: opacity 250ms ease-out, transform 250ms ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    a {
+      font-size: calc(24rem / 16);
+      display: none;
+    }
+  }
+
+  .navigation-container.active .navigation-list {
+    opacity: 1;
+    transform: translateY(100%);
+    pointer-events: all;
+
+    a {
+      display: flex;
+    }
+
+    a.active {
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    padding-inline: calc(20rem / 16);
+  }
+}

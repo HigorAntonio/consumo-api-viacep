@@ -1,0 +1,32 @@
+:root {
+  --background-primary: #111113;
+  --background-secondary: #19191b;
+  --background-tertiary: #222325;
+
+  --box-background: #19191b;
+
+  --accent-blue-light: #1c65ff;
+  --accent-blue-mid: #1349c3;
+  --accent-blue-dark: #012580;
+
+  --error-color: #ff5959;
+
+  --border-primary: #292a2e;
+  --border-secondary: #393a40;
+
+  --toast-background: #242c32;
+  --toast-success-color: #00df80;
+  --toast-warning-color: #ffd21e;
+  --toast-error-color: #f04248;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: var(--border-secondary) var(--background-primary);
+}

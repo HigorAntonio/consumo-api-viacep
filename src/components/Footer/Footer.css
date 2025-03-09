@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .top-section {
+  width: 100%;
+  padding: calc(24rem / 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(16rem / 16);
+  background-color: var(--background-secondary);
+}
+
+.footer .bottom-section {
+  width: 100%;
+  padding: calc(16rem / 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-tertiary);
+
+  p {
+    color: #fff;
+
+    font-family: Inter;
+    font-size: calc(16rem / 16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24rem / 16);
+  }
+
+  p span {
+    color: rgb(253, 40, 40);
+  }
+}

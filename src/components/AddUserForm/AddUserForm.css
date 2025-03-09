@@ -1,0 +1,23 @@
+.add-user-form {
+  width: 100%;
+  max-width: calc(600rem / 16);
+  padding: calc(40rem / 16) calc(32rem / 16);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(32rem / 16);
+
+  border-radius: calc(12rem / 16);
+  background-color: var(--background-secondary);
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc(9rem / 16);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

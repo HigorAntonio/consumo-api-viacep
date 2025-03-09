@@ -1,0 +1,33 @@
+.hamburger-button {
+  display: none;
+  border: none;
+  background: none;
+  border-top: calc(3rem / 16) solid #fff;
+  cursor: pointer;
+}
+
+.hamburger-button::before,
+.hamburger-button::after {
+  content: "";
+  display: block;
+  width: calc(30rem / 16);
+  height: calc(3rem / 16);
+  background-color: #fff;
+  margin-top: calc(5rem / 16);
+  transition: 300ms;
+}
+
+.hamburger-button.active {
+  position: relative;
+  border-top-color: transparent;
+}
+
+.hamburger-button.active::before {
+  transform: rotate(135deg);
+}
+
+.hamburger-button.active::after {
+  position: absolute;
+  transform: rotate(-135deg);
+  top: 0;
+}

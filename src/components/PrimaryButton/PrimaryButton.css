@@ -1,0 +1,18 @@
+.primary-button {
+  padding: calc(10rem / 16) calc(18rem / 16);
+  border-radius: calc(8rem / 16);
+  background-color: var(--accent-blue-mid);
+  border: none;
+
+  color: #fff;
+  font-family: Inter;
+  font-size: calc(16rem / 16);
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(24rem / 16);
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  background-color: var(--accent-blue-dark);
+}

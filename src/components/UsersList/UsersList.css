@@ -1,0 +1,130 @@
+.users-list-container {
+  width: 100%;
+  padding: calc(40rem / 16) calc(32rem / 16);
+  border-radius: calc(12rem / 16);
+  background-color: var(--background-secondary);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(44rem / 16);
+}
+
+.users-table {
+  width: 100%;
+  padding: calc(12rem / 16);
+  border-radius: calc(8rem / 16);
+  background-color: var(--background-tertiary);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(12rem / 16);
+}
+
+.users-table-header {
+  width: 100%;
+  padding-block: calc(8rem / 16);
+  border-bottom: calc(1rem / 16) solid var(--border-secondary);
+
+  h2 {
+    color: #fff;
+    font-family: Inter;
+    font-size: calc(14rem / 16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(24rem / 16);
+  }
+}
+
+.users-table-main {
+  width: 100%;
+  min-height: calc(320rem / 16);
+  display: flex;
+  flex-direction: column;
+
+  .user-row {
+    width: 100%;
+    padding-block: calc(4rem / 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(8rem / 16);
+  }
+
+  .user-row .user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(489rem / 16);
+
+    flex: 1;
+
+    color: #b2b3bd;
+    font-family: Inter;
+    font-size: calc(14rem / 16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24rem / 16);
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .user-row .action-buttons {
+    padding-left: calc(8rem / 16);
+    display: flex;
+    gap: calc(8rem / 16);
+
+    .action-button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      color: #797b86;
+      font-family: Inter;
+      font-size: calc(12rem / 16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: calc(24rem / 16);
+    }
+
+    button:hover {
+      color: #b2b3bd;
+    }
+
+    .delete-button:hover {
+      color: var(--error-color);
+    }
+  }
+}
+
+.actions-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .pagination-info {
+    text-align: center;
+
+    color: #797b86;
+
+    font-family: Inter;
+    font-size: calc(16rem / 16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24rem / 16);
+  }
+}
+
+@media (max-width: 600px) {
+  .actions-container {
+    flex-direction: column;
+    gap: calc(8rem / 16);
+
+    button {
+      width: 100%;
+    }
+  }
+}

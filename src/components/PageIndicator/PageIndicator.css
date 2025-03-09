@@ -1,0 +1,19 @@
+.page-indicator {
+  color: #797b86;
+
+  font-family: Inter;
+  font-size: calc(12rem / 16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(20rem / 16);
+}
+
+.page-indicator-current {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: calc(12rem / 16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(20rem / 16);
+}

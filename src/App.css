@@ -1,0 +1,11 @@
+.app-container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+}
+
+.app-container-main {
+  margin-top: calc(67rem / 16);
+  flex-grow: 1;
+}
