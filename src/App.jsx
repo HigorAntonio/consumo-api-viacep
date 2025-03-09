@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
@@ -15,7 +15,7 @@ import "./App.css";
 function App() {
   return (
     <div className="app-container">
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <ScrollToTop />
         <main className="app-container-main">
@@ -29,7 +29,7 @@ function App() {
         <Footer />
         <Toast position="bottom-right" />
         <Modal />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
