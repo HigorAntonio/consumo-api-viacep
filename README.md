@@ -1,10 +1,14 @@
 # Aplicativo de Cadastro de Usuários com Integração VIACEP
 
-## Descrição
+## 📌 Descrição
 
 Este projeto é uma aplicação web desenvolvida em ReactJS para cadastro de usuários, com integração à API VIACEP para preenchimento automático de endereço com base no CEP fornecido. A aplicação foi estruturada para oferecer uma experiência de usuário intuitiva e eficiente, incluindo validação de dados e mensagens de erro dinâmicas.
 
-## Funcionalidades
+## 🌐 Acesse o Projeto
+
+🔗 [Clique aqui para visualizar a página online](https://higorantonio.github.io/consumo-api-viacep/)
+
+## ⚙️ Funcionalidades
 
 - **Preenchimento automático do endereço:** Ao inserir um CEP válido, os campos de endereço são automaticamente preenchidos.
 - **Validação de dados:** Mensagens de erro são exibidas caso o CEP seja inválido ou tenha menos de 8 dígitos.
@@ -14,13 +18,13 @@ Este projeto é uma aplicação web desenvolvida em ReactJS para cadastro de usu
 - **Listagem de usuários cadastrados:** Exibição dos usuários cadastrados usando um modal."
 - **Navegação entre páginas:** A aplicação é dividida em múltiplas páginas: Início, Cadastro de Usuário e Listagem de Usuários.
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 - **Linguagens:** HTML, CSS, JavaScript
 - **Bibliotecas e Frameworks:** ReactJS, Vite, React-Router
 - **API Externa:** [VIACEP](https://viacep.com.br/)
 
-## Como Executar o Projeto
+## ▶️ Como Executar o Projeto
 
 1. Clone este repositório:
    ```sh
